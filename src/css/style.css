@@ -1,0 +1,40 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #212121;
+    padding: 10px 0;
+}
+
+.menu {
+    display: flex;
+    padding: 0 70px;
+    margin: 0;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 33px;
+}
+
+.menu__link {
+    display: inline-block;
+    padding: 8px 33px 8px 0;
+    border-right: 1px dashed #000; 
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.menu__item:last-child .menu__link {
+    border-right: none;
+    padding-right: 0;
+}
