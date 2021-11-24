@@ -12,21 +12,53 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <ul class="menu">
-                <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Со своим автомобилем</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">На автомобиле компании</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Требования</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Оставить заявку</a></li>
-            </ul>
-        </div>
-        <article class="header__info">
+        <nav class="nav"> <!-- header__nav?? -->
             <div class="container">
-
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Со своим автомобилем</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">На автомобиле компании</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Требования</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Оставить заявку</a></li>
+                </ul>
             </div>
-        </article>
+        </nav>
+        <div class="sub-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 offset-md-1">
+                        <div class="partner">
+                            <a href="#" class="partner__link"><img src="icons/uber.png" alt="uber" class="partner__logo"></a>
+                            <div class="partner__description">Официальный партнер Uber в Москве</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 offset-md-2">
+                        <div class="call">
+                            <div class="call__header">Звоните нам ежедневно</div>
+                            <a href="tel:84957970988" class="call__number">8 495 797 09 88</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="sub-header__btn btn">заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
+    <section class="invitation">
+        <div class="container">
+            <h1 class="invitation__title">КОМПАНИЯ UBER PARTNERS!</h1>
+            <h2 class="invitation__sub-title">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
+            <div class="invitation__description">
+            Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди
+            таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы за
+            пиковое время.<br><br>
+            Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве.  Водители у нас
+            зарабатывают от 80000- 120000 в месяц.
+            </div>
+            <button class="invitation__btn btn">ОТПРАВИТЬ ЗАЯВКУ!</button>
+        </div>
+    </section>
 </body>
 </html>

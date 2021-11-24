@@ -1,32 +1,42 @@
 * {
     font-family: 'Roboto', sans-serif;
     list-style-type: none;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
-.container {
-    width: 1140px;
-    margin: 0 auto;
+.btn {
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
 }
 
 .header {
+    position: relative;
+}
+
+.nav {
     background-color: #212121;
     padding: 10px 0;
 }
 
 .menu {
     display: flex;
-    padding: 0 70px;
+    justify-content: center;
+    padding: 0 25px;
     margin: 0;
-}
-
-.menu__item:not(:last-child) {
-    margin-right: 33px;
 }
 
 .menu__link {
     display: inline-block;
-    padding: 8px 33px 8px 0;
+    padding: 8px 33px 8px 33px;
     border-right: 1px dashed #000; 
     font-weight: 300;
     font-size: 15px;
@@ -34,7 +44,67 @@
     color: #FFFFFF;
 }
 
+.menu__link:hover {
+    color: #FFFFFF;
+}
+
 .menu__item:last-child .menu__link {
     border-right: none;
-    padding-right: 0;
 }
+
+.sub-header {
+    width: 100%;
+    position: absolute;
+    padding: 19px 0;
+    background-color: rgba(0, 0, 0, .6);    
+}
+
+
+.partner__link {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.partner__logo {
+    max-width: 100%;
+}
+
+.partner__description {
+    margin-top: 7px;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 1;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.call {
+    padding-right: 9px;
+}
+
+.call__header {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 300;
+    color: #fff;
+    text-align: right;    
+}
+
+.call__number {
+    display: block;
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+}
+.call__number:hover {
+    color: #fff;
+}
+
+.sub-header__btn {
+    padding: 16px 22px;
+}
+
