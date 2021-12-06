@@ -4,6 +4,10 @@
   text-decoration: none !important;
 }
 
+body {
+  margin-top: 51px;
+}
+
 .btn {
   border: none;
   font-size: 14px;
@@ -59,6 +63,11 @@
 }
 
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
   background-color: #212121;
   padding: 10px 0;
 }
@@ -585,6 +594,8 @@
   height: 35px;
   background: #070716;
   border-radius: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .social__link:hover {
@@ -597,6 +608,8 @@
 
 .social__link span {
   color: #fff;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .links {
