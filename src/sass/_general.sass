@@ -60,7 +60,7 @@ body
 	margin: 0
 	&__link
 		display: inline-block
-		padding: 8px 33px 8px 33px
+		padding: 8px 33px
 		border-right: 1px dashed #000
 		font-weight: 300
 		font-size: 15px
@@ -70,6 +70,32 @@ body
 			color: #FFFFFF
 .menu__item:last-child .menu__link
 	border-right: none
+
+.menu-button
+	display: none
+	width: 26px
+	height: 12px
+	position: absolute
+	right: 30px
+	top: 50%
+	transform: translateY(-50%)
+	&__element
+		height: 2px
+		background-color: #fff
+		&:not(:last-child)
+			margin-bottom: 2px
+	&_active
+		.menu-button__element
+			margin-bottom: -2px
+			transition: 0.8s		
+			&:nth-child(1)
+				transform: translateY(3px) rotate(-45deg)
+			&:nth-child(2)
+				display: none
+			&:nth-child(3)
+				transform: translateY(3px) rotate(45deg)
+			
+				
 
 .sub-header
 	width: 100%
@@ -376,7 +402,7 @@ body
 			color: #21ff
 
 .footer
-	height: 156px
+	min-height: 156px
 	padding: 11px 23px 40px
 	&__delimiter
 		width: 301px
@@ -422,7 +448,7 @@ body
 			color: #070716
 			text-transform: uppercase
 			&:not(:last-child)
-				margin-right: 46px
+				margin-right: 43px
 	&__sub
 		display: flex
 		justify-content: center
@@ -434,7 +460,7 @@ body
 			color: #999
 			text-transform: uppercase
 			&:not(:last-child)
-				margin-right: 22px
+				margin-right: 18px
 	&__lang
 		display: inline-block
 		margin-top: 17px
